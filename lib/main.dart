@@ -27,21 +27,21 @@ class MyHomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
       drawer: Drawer(
         child: ListView(
-          children: [
+          children: const [
             UserAccountsDrawerHeader(
-              accountName: const Text('ERRAMI Anas'),
-              accountEmail: const Text('anaserrami24@gmail.com'),
-              currentAccountPicture: const CircleAvatar(
+              accountName: Text('ERRAMI Anas'),
+              accountEmail: Text('anaserrami24@gmail.com'),
+              currentAccountPicture: CircleAvatar(
                 backgroundImage: AssetImage('assets/avatar.png'),
               ),
             ),
-            const ListTile(
+            ListTile(
               title: Text('Element 1'),
             ),
-            const ListTile(
+            ListTile(
               title: Text('Element 2'),
             ),
-            const ListTile(
+            ListTile(
               title: Text('Element 3'),
             ),
           ],
